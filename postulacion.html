@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chile Limpio - Formulario</title>
+    <link rel="icon" type="image/png" href="Imagenes/chiloeicon.png"> <!-- icono de la foto -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- link de jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- foto principal de pagina -->
+    <div class="containerimg">
+        <img src="Imagenes/chiloe.png" alt="Chiloe" class="centradaimg">
+    </div>
+    
+    <div class="titulo">
+        <h2>Formulario</h2>
+    </div>
+    
+    <!-- rellenar la parte izquierda -->
+    <div class="container">
+        <div class="left-section">
+            <label for="">RUT</label><br>
+            <input type="number" id="rutInput"><br>
+            <label for="">Nombre</label><br>
+            <input type="text" id="nombreInput"><br>
+            <label for="">Apellido Paterno</label><br>
+            <input type="text" id="appaternoInput"><br>
+            <label for="">Apellido Materno</label><br>
+            <input type="text" id="apmaternoInput"><br>
+            <label for="">Fecha Nacimiento</label><br>
+            <input type="date" id="fechaInput"><br>
+            <label for="">Edad</label><br>
+            <input type="number" id="edadInput"><br>
+            <label for="">Género</label><br>
+            <input type="text" id="generoInput"><br>
+            <label for="">Email</label><br>
+            <input type="email" id="correoInput"><br>
+            <label for="">Celular</label><br>
+            <input type="number" id="celularInput"><br>
+            <label for="">Profesión</label><br>
+            <input type="text" id="profesionInput"><br>
+            <label for="">Motivación</label><br>
+            <textarea id="motiInput" rows="7"></textarea><br>
+            <!-- boton para usar el script  -->
+            <button onclick="crearCarta()" id="carta">Crear Carta</button>
+        </div>
+        
+        <!-- para rellenar la parte derecha  -->
+        <div class="right-section" id="infoMostrada">
+            <!-- se crea la carta -->
+        </div>
+    </div>
+</body>
+</html>

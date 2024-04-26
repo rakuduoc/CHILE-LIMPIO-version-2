@@ -1,0 +1,67 @@
+body { /* para la foto de fondo */
+    background-image: url(Imagenes/wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo { /* el titulo */
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
+.container { /* tener las dos secciones centradas */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh;
+    margin: 0 20px; 
+    
+}
+
+.containerimg { /* container para la imagen */
+    text-align: center;
+    
+}
+
+.centradaimg { /*  para centrar la imagen  */
+    width: 50%; 
+    max-width: 250px; 
+}
+
+.left-section { /* la seccion izquierda */
+    background-color: rgb(165, 209, 211);
+    padding: 20px;
+    flex: 1;
+    line-height: 1.5;
+    margin-left: 450px;
+}
+
+.right-section { /* la seccion derecha */
+    background-color: #f8f8f7;
+    padding: 20px;
+    flex: 1;
+    line-height: 1.5;
+    margin-right: 350px;
+    min-height: 746px; 
+    max-height: 746px; 
+    max-width: 746px;
+    min-width: 500px; 
+    overflow-y: auto;
+}
+
+.left-section input[type="number"], /*  para que el area dondese escribe sea mas grande  */
+.left-section input[type="text"],
+.left-section input[type="email"],
+.left-section input[type="date"],
+.left-section textarea {
+    width: 60%;
+    max-width: none; 
+    margin-bottom: 10px; 
+}
+
+#infoMostrada {
+    max-width: 300px; /* deja un maximo hacia el lado */
+    overflow-wrap: break-word; /* hace que si el texto es muy largo corte hacia abajo y no siga al lado */
+}
